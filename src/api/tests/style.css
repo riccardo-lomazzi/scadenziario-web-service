@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Fira Sans';
+    background-color: #E5E5E5;
+}
+
+.input-field {
+    height: 2em;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0.5em 0 0.5em 0;
+    padding: 10px;
+}
+
+.sendButton {
+    display: flex;
+    border: none;
+    background-color: #4684ed;
+    color: white;
+    font-family: 'Fira Sans';
+    border-radius: 5px;
+    height: auto;
+    width: 4em;
+    line-height: normal;
+    box-shadow: 1px 1px #888888;
+    text-align: center;
+    padding: 3%;
+    cursor: pointer;
+}
+
+.testBox {
+    display:flex;
+    flex: 1;
+    flex-direction: row;
+    min-height: 10vh;
+    justify-content: space-between;
+    background-color: rgb(164, 188, 206);
+    padding: 2%;
+    border-radius: 10px;
+    border-color: blue;
+    border-width: 1px;
+    border-style: inset;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.testBoxTitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.testBoxLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    padding: 1%;
+}
+
+.testBoxRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+    flex-wrap: wrap;
+}
+
+.results{
+    display: flex;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: #E5E5E5;
+    padding: 0.5em;
+    overflow: scroll;
+    max-height: 30vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+

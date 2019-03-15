@@ -1,0 +1,32 @@
+{
+    "user": {
+        "id": "1",
+        "nome": "rici"
+    },
+    "groups": [
+        {
+            "id": 1,
+            "nome": "2010"
+        },
+        {
+            "id": 2,
+            "nome": "8683"
+        }
+    ],
+    "movimenti": [
+        {
+            "id_movimento": 1,
+            "nome": "Fastweb",
+            "dettagli": "",
+            "data": "",
+            "id_gruppo": 1
+        },
+        {
+            "id_movimento": 2,
+            "nome": "Telecom",
+            "dettagli": "",
+            "data": "",
+            "id_gruppo": 2
+        }
+    ]
+}

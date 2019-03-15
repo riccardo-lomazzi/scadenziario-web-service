@@ -1,0 +1,37 @@
+{
+  "name": "scadenziario-web-service",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "start2": "npm run build && nodemon --exec babel-node src/server.js",
+    "build": "babel src --out-dir dist --copy-files",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/otakon92/scadenziario-web-service.git"
+  },
+  "keywords": [],
+  "author": "Riccardo Lomazzi",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/otakon92/scadenziario-web-service#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mariadb": "^2.0.3",
+    "multiparty": "^4.2.1",
+    "rimraf": "^2.6.3",
+    "validatorjs": "^3.15.1"
+  }
+}

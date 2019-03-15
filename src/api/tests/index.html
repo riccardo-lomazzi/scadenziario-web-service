@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
+    <link rel="stylesheet" type="text/css"
+        href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jwt-decode.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+    <div class="testBox">
+        <div class="testBoxLeft">
+            <div class="testBoxTitle">LOGIN</div>
+            <form class="form" id="loginForm">
+                <input class="input-field" type="text" name="username" placeholder="username" />
+                <input class="input-field" type="text" name="password" placeholder="password" />
+            </form>
+            <button class="sendButton" type="button" id="loginButton">Login</button>
+        </div>
+        <div class="testBoxRight">
+            <div class="testBoxTitle">RESPONSE</div>
+            <div class="results" id="loginResponse"></div>
+        </div>
+    </div>
+    <div class="testBox">
+        <div class="testBoxLeft">
+            <div class="testBoxTitle">GET USER DATA</div>
+            <button class="sendButton" type="button" id="userDataButton">Get Data</button>
+        </div>
+        <div class="testBoxRight">
+            <div class="testBoxTitle">RESPONSE</div>
+            <div class="results" id="userDataResponse"></div>
+        </div>
+    </div>
+    <div class="testBox">
+        <div class="testBoxLeft">
+            <div class="testBoxTitle">GET ALL TRANSACTIONS</div>
+            <form class="form" id="getTransactionsForm">
+                <label>Insert a type or ID of transaction</label>
+                <input class="input-field" id="transactionIdInputField" type="text" name="transactionId"
+                    placeholder="transactionID (default: none)" />
+                <input class="input-field" id="transactionTypeInputField" type="text" name="transactionType"
+                    placeholder="transactionType (default: all)" />
+            </form>
+            <button class="sendButton" type="button" id="getTransactionsButton">Invia</button>
+        </div>
+        <div class="testBoxRight">
+            <div class="testBoxTitle">RESPONSE</div>
+            <div class="results" id="getTransactionsResponse"></div>
+        </div>
+    </div>
+    <div class="testBox">
+        <div class="testBoxLeft">
+            <div class="testBoxTitle">SET A TRANSACTION</div>
+            <form class="form" id="setTransactionForm">
+                <input class="input-field" type="text" name="transactionId"
+                    placeholder="transactionId (default: undefined)" />
+                <input class="input-field" type="text" name="transactionGroup"
+                    placeholder="transactionGroup (default: none)" />
+                <input class="input-field" type="text" name="transactionType"
+                    placeholder="transactionType (default: dare)" />
+                <input class="input-field" type="text" name="transactionAmount"
+                    placeholder="transactionAmount (default: 0)" />
+                <input class="input-field" type="text" name="transactionCurrency"
+                    placeholder="transactionCurrency (default: €)" />
+                <input class="input-field" type="text" name="transactionName" placeholder="transactionName" />
+                <input class="input-field" type="text" name="transactionDetails" placeholder="transactionDetails" />
+                <input class="input-field" type="text" name="transactionDate"
+                    placeholder="transactionDate (default: now)" />
+            </form>
+            <button class="sendButton" type="button" id="setTransactionButton">Invia</button>
+        </div>
+        <div class="testBoxRight">
+            <div class="testBoxTitle">RESPONSE</div>
+            <div class="results" id="setTransactionResponse"></div>
+        </div>
+    </div>
+    <div class="testBox">
+        <div class="testBoxLeft">
+            <div class="testBoxTitle">DELETE A TRANSACTION</div>
+            <form class="form" id="deleteTransactionForm">
+                <input class="input-field" type="text" name="transactionId"
+                    placeholder="transactionId (default: undefined)" />
+            </form>
+            <button class="sendButton" type="button" id="deleteTransactionButton">Invia</button>
+        </div>
+        <div class="testBoxRight">
+            <div class="testBoxTitle">RESPONSE</div>
+            <div class="results" id="deleteTransactionResponse"></div>
+        </div>
+    </div>
+</body>
+
+</html>
