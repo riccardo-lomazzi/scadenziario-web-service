@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "start": "nodemon --exec babel-node src/server.js",
-    "start2": "npm run build && nodemon --exec babel-node src/server.js",
     "build": "babel src --out-dir dist --copy-files",
     "serve": "node dist/server.js"
   },

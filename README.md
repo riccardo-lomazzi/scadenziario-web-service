@@ -3,11 +3,7 @@
 The web-service part of the Scadenziario suite, which is a webapp to register fee payment deadlines. 
 It is based on a Express server written in ES6.
 
-### Requirements
-- Node.js Express server
-- A mariadb/MySQL DBMS
-
-### Structure
+### Features
 
 This RESTful API is built on the MVC pattern, and supports CRUD operations. It provides
 - basic authentication with JWT
@@ -15,9 +11,19 @@ This RESTful API is built on the MVC pattern, and supports CRUD operations. It p
 - fee groups creation
 
 
-Most of the functions above can be tested on the test page found in `src/api/tests/index.html`, provided you: 
-- install all the dependencies in `package.json`
-- have a DB structured like this (all the tables and their fields are in Italian)
+Most of the functions above can be tested on the test page found in `/src/api/tests/index.html`
+
+### Requirements
+- `Node.js Express` server
+- A `mariadb/MySQL` DBMS with a `scadenziario` database structured like [this](#DB-Structure)
+
+### Installation
+- Install `packages.json` dependencies
+- Insert your DBMS connection data inside `/src/api/handlers/DBConnectionData.js`
+- Insert a `secret_key` for `JWT` validation inside `/src/config.js`
+- Start the server with `npm run start`
+
+### DB Structure
 
 | Table name | Columns | Description |
 | --- | --- | --- |
@@ -27,6 +33,7 @@ Most of the functions above can be tested on the test page found in `src/api/tes
 | gruppiutenti | (`userid`, `idgruppo`) | Table that joins users and fee groups (not everyone can see other people's groups, only the admin) |
 | tipimovimento | (`nome`) | Table to store fee types (`DARE` -> expenses, `AVERE` -> revenues) |
 
-- load the page on the same network location of the Express server (`localhost`)
+
+
 
 
